@@ -1,0 +1,18 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.row {
+  padding: 0 10px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#section_back {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7fddff), to(#00073f));
+  background: linear-gradient(to bottom, #7fddff, #00073f);
+}
+/*# sourceMappingURL=style.css.map */

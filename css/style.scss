@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+.row{
+    padding: 0 10px;
+}
+::-webkit-scrollbar { 
+    // width: 15px; 
+    display: none;
+}
+// ::-webkit-scrollbar-track { background-color: #002f59; }
+// ::-webkit-scrollbar-thumb { background-color: #0069aa; border-radius: 30px;}
+// ::-webkit-scrollbar-button { display: none; }
+
+#section_back{
+    background:  linear-gradient( to bottom, #7fddff, #00073f );
+}
