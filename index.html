@@ -804,10 +804,9 @@
                             </g>
                             </svg>
                             <ul class="characters_1">
-                                <li><img src="img/cont2_Buto2_1.png" alt=""></li>
-                                <li><img src="img/cont2_Buto2_2.png" alt=""></li>
-                                <li><img src="img/cont2_Buto2_3.png" alt=""></li>
-                                <li><img src="img/cont2_Buto2_4.png" alt=""></li>
+                                <li><img src="img/cont2_Buto1_1.png" alt=""></li>
+                                <li><img src="img/cont2_Buto1_2.png" alt=""></li>
+                                <li><img src="img/cont2_Buto1_3.png" alt=""></li>
                             </ul>
                             <ul class="characters_2">
                                 <li><img src="img/cont2_Buto2_1.png" alt=""></li>
@@ -816,16 +815,16 @@
                                 <li><img src="img/cont2_Buto2_4.png" alt=""></li>
                             </ul>
                             <ul class="characters_3">
-                                <li><img src="img/cont2_Buto2_1.png" alt=""></li>
-                                <li><img src="img/cont2_Buto2_2.png" alt=""></li>
-                                <li><img src="img/cont2_Buto2_3.png" alt=""></li>
-                                <li><img src="img/cont2_Buto2_4.png" alt=""></li>
-                            </ul>
-                            <ul class="characters_4">
                                 <li><img src="img/cont2_Buto3_1.png" alt=""></li>
                                 <li><img src="img/cont2_Buto3_2.png" alt=""></li>
                                 <li><img src="img/cont2_Buto3_3.png" alt=""></li>
                                 <li><img src="img/cont2_Buto3_4.png" alt=""></li>
+                            </ul>
+                            <ul class="characters_4">
+                                <li><img src="img/cont2_Buto4_1.png" alt=""></li>
+                                <li><img src="img/cont2_Buto4_2.png" alt=""></li>
+                                <li><img src="img/cont2_Buto4_3.png" alt=""></li>
+                                <li><img src="img/cont2_Buto4_4.png" alt=""></li>
                             </ul>
                         </div>
                     </div>
@@ -954,111 +953,140 @@
 
 
     <script src="JS/slideShow.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         //cont2 탭 버튼
-        var tab_Btn = $(".tab_button>ul>li");
-        var tab_Cont =$(".tab_icon>ul");
-        tab_Cont.hide().eq(0).show();
+        var tab_Btn = $(".tab_button>ul>li"); // 탭버튼 네모 4개
+        var tab_Icon_ul =$(".tab_icon>ul"); // 탭 아이콘 모음 ul
+        var tab_Icon_li = $(".tab_icon>ul>li"); // 탭 아이콘 각각 li
+        var tab_Menu = $(".menu>ul"); // 탭 캐릭터(큰이미지) 모음 ul
+        var tab_Menu_li = $(".menu>ul>li"); // 탭 캐릭터(큰이미지) 각각 li
+
+        
+
+        tab_Icon_ul.hide().eq(0).show();
         
         tab_Btn.click(function(e){
             e.preventDefault();
             var target = $(this);
-            var index =target.index();
+            var index = target.index();
             tab_Btn.removeClass("active");
             target.addClass("active");
-            tab_Cont.hide();
-            tab_Cont.eq(index).show();
+            tab_Icon_ul.hide();
+            tab_Icon_ul.eq(index).show();
         });
 
         //cont2 탭 메뉴
-        var tab_Icon = $(".tab_icon>ul>li");
-        var tab_Menu =$(".menu>ul>li");
-        tab_Menu.hide().eq(0).show();
         
-        tab_Icon.click(function(e){
+        var indexx = tab_Icon_li.index(); //0
+        tab_Menu_li.hide().eq(0).show();
+
+        tab_Icon_li.click(function(e){
             e.preventDefault();
-            var target = $(this);
-            var index =target.index();
-            tab_Icon.removeClass("active");
-            target.addClass("active");
-            tab_Menu.hide();
-            tab_Menu.eq(index).show();
+            var Index = tab_Menu_li.index();
+            var targetIn = $(this).index();
+            // var index = target.index();
+            // tab_Icon_li.removeClass("active");
+            // target.addClass("active");
+            tab_Menu_li.hide();
+            tab_Menu_li.eq(targetIn).show();
+            console.log(targetIn);
         });
+
+
+
+        
+        // tab_Icon_li.click(function(e){
+        //     e.preventDefault();
+        //     var target = $(this);
+        //     var index = target.index();
+        //     tab_Icon_li.removeClass("active");
+        //     target.addClass("active");
+        //     tab_Menu_li.hide();
+        //     tab_Menu_li.eq(tab_Menu_liIn).show();
+        //     console.log(tab_Menu_liIn);
+        // });
         
         //cont2 텍스트
-        var tab_Menu =$(".menu>ul>li");
         var tab_Text =$(".menu_text>ul>li");
         tab_Text.hide().eq(0).show();
         
-        tab_Icon.show(function(e){
-            // e.preventDefault();
-            // var target = $(this);
-            // var index =target.index();
-            // tab_Icon.removeClass("active");
-            // target.addClass("active");
-            // tab_Text.hide();
-            // tab_Text.eq(index).show();
+        // tab_Icon.click(function(e){
+        //     e.preventDefault();
+        //     var target = $(this);
+        //     var index =target.index();
+        //     tab_Icon.removeClass("active");
+        //     target.addClass("active");
+        //     tab_Text.hide();
+        //     tab_Text.eq(index).show();
+        // });
+
+
+
+        //배너 J쿼리
+        $(function(){
+            $('.slide').ulslide({
+                statusbar: true,
+                width
+            });
         });
 
-
-
-        //배너 스크립트
-        let slides = document.querySelector(".slide");
-        let slideImg = document.querySelectorAll(".slide li");
-        currentIdx = 0;
-        slideCount = slideImg.length;
-        prev = document.querySelector(".prev");//이전 버튼
-        next = document.querySelector(".next");//다음 버튼
-        slideWidth = 45;//슬라이드이미지 넓이
-        slideMargin = 0;
-        //슬라이드 끼리의 마진값
-        makeClone();
-        // 처음이미지와 마지막 이미지 복사 함수
-        initfunction();
-        //슬라이드 넓이와 위치값 초기화 함수
-        function makeClone(){
-            // slideImg.firstElementChild.cloneNode(true);
-            let cloneSlide_first = slideImg[0].cloneNode(true);
-            let cloneSlide_last = slides.lastElementChild.cloneNode(true);
-            slides.append(cloneSlide_first); slides.insertBefore(cloneSlide_last,slides.firstElementChild);
-        }
-        function initfunction(){ 
-            slides.style.width = (slideWidth + slideMargin) * (slideCount+2) + "vw";
-            slides.style.left = -(slideWidth + slideMargin) + "vw";
-        }
-        next.addEventListener('click', function () { //다음 버튼 눌렀을때
-            if (currentIdx <= slideCount-1) {
-            //슬라이드이동
-            slides.style.left = -(currentIdx+2) * (slideWidth+slideMargin) + "vw";
-            slides.style.transition = `${0.5}s ease-out`;//이동 속도
-            }
-            if (currentIdx === slideCount-1){ //마지막 슬라이드 일때
-                setTimeout(function(){
-                    //0.5초동안 복사한 첫번째 이미지에서, 진짜 첫번째 위치로 이동
-                    slides.style.left = -(slideWidth + slideMargin) + "vw";
-                    slides.style.transition = `${0}s ease-out`;
-                },500);
-                currentIdx = -1;
-                }
-                currentIdx+=1;
-            }
-        );
-        prev.addEventListener('click', function () {//이전 버튼 눌렀을때
-            console.log(currentIdx);
-            if (currentIdx >= 0) {
-                slides.style.left = -(currentIdx) * (slideWidth + slideMargin) + "vw";
-                slides.style.transition = `${0.5}s ease-out`;
-            }if (currentIdx === 0){
-                setTimeout(function(){
-                    slides.style.left = -(slideCount) * (slideWidth + slideMargin)+ "vw";
-                    slides.style.transition = `${0}s ease-out`;
-                },500);
-                currentIdx=slideCount;
-             }
-             currentIdx-=1;
-            }
-        );
+        // //배너 스크립트
+        // let slides = document.querySelector(".slide");
+        // let slideImg = document.querySelectorAll(".slide li");
+        // currentIdx = 0;
+        // slideCount = slideImg.length;
+        // prev = document.querySelector(".prev");//이전 버튼
+        // next = document.querySelector(".next");//다음 버튼
+        // slideWidth = 45;//슬라이드이미지 넓이
+        // slideMargin = 0;
+        // //슬라이드 끼리의 마진값
+        // makeClone();
+        // // 처음이미지와 마지막 이미지 복사 함수
+        // initfunction();
+        // //슬라이드 넓이와 위치값 초기화 함수
+        // function makeClone(){
+        //     // slideImg.firstElementChild.cloneNode(true);
+        //     let cloneSlide_first = slideImg[0].cloneNode(true);
+        //     let cloneSlide_last = slides.lastElementChild.cloneNode(true);
+        //     slides.append(cloneSlide_first); slides.insertBefore(cloneSlide_last,slides.firstElementChild);
+        // }
+        // function initfunction(){ 
+        //     slides.style.width = (slideWidth + slideMargin) * (slideCount+2) + "vw";
+        //     slides.style.left = -(slideWidth + slideMargin) + "vw";
+        // }
+        // next.addEventListener('click', function () { //다음 버튼 눌렀을때
+        //     if (currentIdx <= slideCount-1) {
+        //     //슬라이드이동
+        //     slides.style.left = -(currentIdx+2) * (slideWidth+slideMargin) + "vw";
+        //     slides.style.transition = `${0.5}s ease-out`;//이동 속도
+        //     }
+        //     if (currentIdx === slideCount-1){ //마지막 슬라이드 일때
+        //         setTimeout(function(){
+        //             //0.5초동안 복사한 첫번째 이미지에서, 진짜 첫번째 위치로 이동
+        //             slides.style.left = -(slideWidth + slideMargin) + "vw";
+        //             slides.style.transition = `${0}s ease-out`;
+        //         },500);
+        //         currentIdx = -1;
+        //         }
+        //         currentIdx+=1;
+        //     }
+        // );
+        // prev.addEventListener('click', function () {//이전 버튼 눌렀을때
+        //     console.log(currentIdx);
+        //     if (currentIdx >= 0) {
+        //         slides.style.left = -(currentIdx) * (slideWidth + slideMargin) + "vw";
+        //         slides.style.transition = `${0.5}s ease-out`;
+        //     }if (currentIdx === 0){
+        //         setTimeout(function(){
+        //             slides.style.left = -(slideCount) * (slideWidth + slideMargin)+ "vw";
+        //             slides.style.transition = `${0}s ease-out`;
+        //         },500);
+        //         currentIdx=slideCount;
+        //      }
+        //      currentIdx-=1;
+        //     }
+        // );
 
     </script>
 </body>
