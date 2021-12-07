@@ -412,9 +412,12 @@ main .ban_flex .banner ul .characters3 {
 }
 .cont3 .light {
   position: absolute;
-  top: 20%;
-  width: 100vw;
+  top: 0;
+  left: 10%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
+  z-index: 0;
 }
 .cont3 .light svg {
   width: 100%;

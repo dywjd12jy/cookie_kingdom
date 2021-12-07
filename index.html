@@ -1120,60 +1120,6 @@
             cookieDesc.hide().eq(index1+tabIndex).show(); 
         });
 
-
-
-
-        //cont2 탭 버튼
-        var tab_Btn = $(".tab_button>ul>li"); // 탭버튼 네모 4개
-        var tab_Icon_ul =$(".tab_icon>ul"); // 탭 아이콘 모음 ul
-        var tab_Icon_li = $(".tab_icon>ul>li"); // 탭 아이콘 각각 li
-        var tab_Menu = $(".menu>ul"); // 탭 캐릭터(큰이미지) 모음 ul
-        var tab_Menu_li = $(".menu>ul>li"); // 탭 캐릭터(큰이미지) 각각 li
-
-        
-
-        tab_Icon_ul.hide().eq(0).show();
-        
-        tab_Btn.click(function(e){
-            e.preventDefault();
-            var target = $(this);
-            var index = target.index();
-            tab_Btn.removeClass("active");
-            target.addClass("active");
-            tab_Icon_ul.hide();
-            tab_Icon_ul.eq(index).show();
-        });
-
-        //cont2 탭 메뉴
-        
-        var indexx = tab_Icon_li.index(); //0
-        tab_Menu_li.hide().eq(0).show();
-
-        tab_Icon_li.click(function(e){
-            e.preventDefault();
-            var Index = tab_Menu_li.index();
-            var targetIn = $(this).index();
-            // var index = target.index();
-            // tab_Icon_li.removeClass("active");
-            // target.addClass("active");
-            tab_Menu_li.hide();
-            tab_Menu_li.eq(targetIn).show();
-            console.log(targetIn);
-        });
-
-
-
-        
-        // tab_Icon_li.click(function(e){
-        //     e.preventDefault();
-        //     var target = $(this);
-        //     var index = target.index();
-        //     tab_Icon_li.removeClass("active");
-        //     target.addClass("active");
-        //     tab_Menu_li.hide();
-        //     tab_Menu_li.eq(tab_Menu_liIn).show();
-        //     console.log(tab_Menu_liIn);
-        // });
         
         //cont2 텍스트
         var tab_Text =$(".menu_text>ul>li");

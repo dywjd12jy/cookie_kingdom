@@ -501,15 +501,19 @@ main{
 
     .light{
         position: absolute;
-        top: 20%;
-        width: 100vw;
+        top: 0;
+        left: 10%;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
+        z-index: 0;
 
         svg{
             width: 100%;
             height: 100%;
         }
     }
+
     .container{
         display: flex;
         justify-content: center;
