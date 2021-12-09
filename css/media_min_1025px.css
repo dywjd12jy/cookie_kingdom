@@ -180,7 +180,6 @@ main .ban_flex .banner ul .characters3 {
   overflow: hidden;
 }
 .cont1 .slider .slider_back .slide_box .slide {
-  /*이미지들이 담겨있는 슬라이드 컨테이너*/
   position: absolute;
   left: 0;
   top: 0;
@@ -213,11 +212,12 @@ main .ban_flex .banner ul .characters3 {
 }
 .cont1 .slider .controller {
   position: absolute;
-  width: 100%;
-  margin: 0 auto;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
-  top: 50%;
 }
 .cont1 .slider .controller button {
   background-color: #3290D6;
@@ -319,6 +319,9 @@ main .ban_flex .banner ul .characters3 {
   background-color: #0069aa;
   border: solid 2px #fefefe;
 }
+.cont2 .tab_button ul li:hover button {
+  background: linear-gradient(to right, #7fddff 20%, #3a2aff 100%);
+}
 .cont2 .tab_cont {
   display: flex;
   align-items: center;
@@ -333,13 +336,18 @@ main .ban_flex .banner ul .characters3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
-  margin: 15px;
-  border-radius: 100px;
-  border: solid 2px #eee;
-  background-color: #3290D6;
   width: 100px;
   height: 100px;
+  padding: 5px;
+  margin: 15px;
+  border: 32x solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#fefefe, #fefefe), linear-gradient(to right, #54abff 20%, #00073f 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.cont2 .tab_cont .tab_icon ul li:hover {
+  background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #7fddff 20%, #3a2aff 100%);
 }
 .cont2 .tab_cont .tab_icon ul li button {
   width: 100%;
