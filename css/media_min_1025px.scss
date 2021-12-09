@@ -201,7 +201,11 @@ main{
 
 #section_back{
     // banner랑 .cont1_배경 겹치게
-    margin-top: -5vw;;
+    margin-top: -5vw;
+}
+.animated{
+    transition: 0.5s ease-out;
+    /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
 }
 .cont1{
     height: 140vh;
@@ -230,9 +234,6 @@ main{
                     position: absolute;
                     left: 0;
                     top: 0;
-                    width: 100vw;
-                    transition: 0.5s ease-out;
-                    /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
 
                     li:not(:last-child) {
                         float: left; 
