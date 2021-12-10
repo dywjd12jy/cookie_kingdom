@@ -62,7 +62,6 @@
         currentIdx = num;
 
         if(currentIdx == slideLength || currentIdx == -slideLength){
-
             setTimeout(function(){
                 slide.classList.remove('animated');
                 slide.style.left = '0px';
