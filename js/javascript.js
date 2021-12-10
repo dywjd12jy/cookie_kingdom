@@ -3,11 +3,18 @@
 
     var slide = document.querySelector('.slide'),
         slide_Li = document.querySelectorAll('.slide li'),
+
+        slideWidth = document.querySelector('.slide li').offsetWidth,
+        // slideWidth = 90,
+
         currentIdx = 0,
-        slideWidth = 45,
         slideLength = slide_Li.length,
+
         nextBtn = document.querySelector('.next'),
         prevBtn = document.querySelector('.prev');
+        
+        // console.log (slideWidth);
+        console.log (slideWidth);
 
     makeClone();
 
@@ -34,13 +41,13 @@
         var currentSlides = document.querySelectorAll('.slide li');
         var newSlideCount = currentSlides.length;
 
-        var newWidth = slideWidth*newSlideCount +'vw';
+        var newWidth = slideWidth*newSlideCount +'px';
         slide.style.width = newWidth;
     }
 
     function setPosition(){
         var initialTranslateValue = -(slideWidth*slideLength);
-        slide.style.transform = 'translateX(' + initialTranslateValue+'vw)';
+        slide.style.transform = 'translateX(' + initialTranslateValue+'px)';
     }
 
     nextBtn.addEventListener('click',function(){
@@ -51,7 +58,7 @@
     });
 
     function moveSlide(num){
-        slide.style.left = -num * slideWidth + 'vw';
+        slide.style.left = -num * slideWidth + 'px';
         currentIdx = num;
 
         if(currentIdx == slideLength || currentIdx == -slideLength){
