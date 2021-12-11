@@ -1,10 +1,10 @@
 
 //banner script
 
-    var slide = document.querySelector('.slide'),
-        slide_Li = document.querySelectorAll('.slide li'),
+    var slide = document.querySelector('.slide_list'),
+        slide_Li = document.querySelectorAll('.slide_list li'),
 
-        slideWidth = document.querySelector('.slide li').offsetWidth,
+        slideWidth = document.querySelector('.slide_list li').offsetWidth,
         // slideWidth = 90,
 
         currentIdx = 0,
@@ -38,7 +38,7 @@
     }
 
     function updateWidth(){
-        var currentSlides = document.querySelectorAll('.slide li');
+        var currentSlides = document.querySelectorAll('.slide_list li');
         var newSlideCount = currentSlides.length;
 
         var newWidth = slideWidth*newSlideCount +'px';
