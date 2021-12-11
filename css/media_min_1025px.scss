@@ -15,6 +15,7 @@ header{
     width: 100vw;
     z-index: 30;
     font-size: 14px;
+    top: 0;
 
     #hd_up{
         height: 34px;
@@ -109,6 +110,7 @@ main{
         position: absolute;
         z-index: -1;
         width: 100%;
+        height: 100vh;
         margin-top: 0vw;
 
         #bg_vedio{
@@ -122,16 +124,20 @@ main{
         display: flex;
         justify-content: center;
         padding-top: 130px;
+        margin-top: 50px;
 
         .banner{
             position: relative;
-            padding-top: 50px;
+            margin-top: 50px;
             width: 65vw;
             margin: 0;
 
             .ban_media{
                 width: 100%;
 
+                video{
+                    border-radius: 5px;
+                }
                 #bn_vedio{
                     border: solid 1px #fefefe;
 
@@ -141,14 +147,17 @@ main{
                 }
             }
             .ban_border{
+                border-radius: 5px;
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -47%);
+                transform: translate(-50%, -51%);
                 z-index: 2;
                 border: solid 1px #fefefe;
                 width: 95%;
-                height: 96%;
+                height: 105%;
+                box-sizing: border-box;
+                margin: 0 auto;
             }
 
             ul{
@@ -157,21 +166,21 @@ main{
                     position: absolute;
                     display: flex;
                     z-index: 2;
-                    margin: -70px 0 0 -80px;
+                    margin: -70rem 0 0 -80rem;
                     transform: rotate(5deg);
 
                 }
                 .characters1{
-                    width: 6vw;
+                    width: 120rem;
 
                 }
                 .characters2{
-                    width: 7.5vw;
+                    width: 140rem;
 
                 }
                 .characters3{
-                    width: 8.5vw;
-                    margin-left: -20px;
+                    width: 160rem;
+                    margin-left: -20rem;
                     transform: rotate(-13deg);
 
                 }
@@ -184,15 +193,15 @@ main{
 .title{
     font-family: "cookie_Regular";
     color: #fefefe;
-    line-height: 3vw;
+    line-height: 50rem;
 
     h3{
-        font-size: 1.7vw;
+        font-size: 30rem;
 
     }
     h2{
         font-weight: 500;
-        font-size: 3vw;
+        font-size: 50rem;
 
     }
 }
@@ -561,7 +570,7 @@ main{
             text-align: center;
             margin-top: 100px;
             color: #dfdfdf;
-            font-size: 1rem;
+            font-size: 20rem;
         }
         .cont3_ch{
             width: 60vw;
@@ -643,28 +652,38 @@ main{
 .cont4{
     height: 130vh;
     .container{
-        text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         
         .media{
             margin-top: 100px;
+            max-width: 1440px;
             ul{
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
+                align-items: center;
                 margin-top: 50px;
+                flex-wrap: wrap;
 
                 li{
+                    box-sizing: border-box;
+                    width: 33.33%;
+                    margin: 20rem 0;
                     padding: 0 10px;
                     .box{
-                        width: 25vw;
-                        border: solid 2px #fefefe;
+                        // width: 25vw;
+                        border: solid 2px #333;
                         border-radius: 5px;
                         height: 15vw;
                         overflow: hidden;
                     }
+                    .box:hover ~p{
+                        color: #3290D6;
+                    }
                     iframe{
+
                         width: 100%;
                         height: 100%;
                         transition: 0.5s;
@@ -675,6 +694,7 @@ main{
                     p{
                         margin-top: 10px;
                         color: #fefefe;
+                        font-size: 20rem;
                     }
                 }
             }
@@ -682,11 +702,11 @@ main{
         .more{
             margin-top: 150px;
             button{
-                padding: 5px;
-                width: 10vw;
+                padding: 0.3vw;
+                width: 130rem;
                 border: solid 2px #fefefe;
                 border-radius: 5px;
-                font-size: 1.5rem;
+                font-size: 25rem;
                 
                 &:hover{
                     background-color: #0069aa;
