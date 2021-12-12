@@ -288,7 +288,7 @@ main .ban_flex .banner ul .characters3 {
   background: none;
 }
 .cont2 .tab_button {
-  margin-top: 100px;
+  margin-top: 150px;
   width: 100%;
 }
 .cont2 .tab_button ul {
@@ -299,31 +299,44 @@ main .ban_flex .banner ul .characters3 {
   margin: 0 5px;
 }
 .cont2 .tab_button ul li button {
-  font-size: 18px;
-  padding: 10px 15px;
-  background-color: #0069aa;
-  border: solid 2px #fefefe;
+  font-size: 20rem;
+  padding: 10rem 20rem;
+  width: 200rem;
+  color: #fefefe;
+  background-color: #002f59;
+  box-shadow: 1px 1px 2px 1.5px #bee0ff;
+  border-radius: 5px;
 }
 .cont2 .tab_button ul li:hover button {
-  background: linear-gradient(to right, #7fddff 20%, #3a2aff 100%);
+  background: #0069aa;
+  color: #fefefe;
+}
+.cont2 .tabBtn_active {
+  background: #f00;
+  color: #fefefe;
+}
+.cont2 .tabIcon_active {
+  background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #7fddff 20%, #3a2aff 100%);
 }
 .cont2 .tab_cont {
   display: flex;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 100px;
 }
 .cont2 .tab_cont .tab_icon {
-  width: 25%;
+  width: 20%;
+  margin: 0 auto;
+}
+.cont2 .tab_cont .tab_icon ul {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .cont2 .tab_cont .tab_icon ul li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
+  width: 120rem;
+  height: 120rem;
+  padding: 5rem;
   margin: 15px;
   border: 32x solid transparent;
   border-radius: 50%;
@@ -352,6 +365,9 @@ main .ban_flex .banner ul .characters3 {
 }
 .cont2 .tab_cont .menu_characters .menu {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cont2 .tab_cont .menu_characters .menu .menu_Back {
   width: 100%;
@@ -378,6 +394,7 @@ main .ban_flex .banner ul .characters3 {
 .cont2 .tab_cont .menu_text {
   width: 30%;
   padding: 60px;
+  font-size: 20rem;
 }
 .cont2 .tab_cont .menu_text ul li {
   text-align: left;
@@ -385,10 +402,10 @@ main .ban_flex .banner ul .characters3 {
   color: #fefefe;
 }
 .cont2 .tab_cont .menu_text ul li h5 {
-  font-size: 25px;
+  font-size: 25rem;
 }
 .cont2 .tab_cont .menu_text ul li h4 {
-  font-size: 35px;
+  font-size: 35rem;
   margin: 20px 0 30px;
 }
 .cont2 .tab_cont .menu_text ul li p {
@@ -404,6 +421,7 @@ main .ban_flex .banner ul .characters3 {
   height: 200vh;
   margin-top: 100px;
   position: relative;
+  padding: 0 10px;
 }
 .cont3 .light {
   position: absolute;
@@ -541,17 +559,18 @@ main .ban_flex .banner ul .characters3 {
 .cont4 .container .media ul li {
   box-sizing: border-box;
   width: 33.33%;
+  height: 100%;
   margin: 20rem 0;
   padding: 0 10px;
 }
 .cont4 .container .media ul li .box {
   border: solid 2px #333;
   border-radius: 5px;
-  height: 15vw;
+  height: 17vw;
   overflow: hidden;
 }
 .cont4 .container .media ul li .box:hover ~ p {
-  color: #3290D6;
+  color: #fefefe;
 }
 .cont4 .container .media ul li iframe {
   width: 100%;
@@ -563,7 +582,7 @@ main .ban_flex .banner ul .characters3 {
 }
 .cont4 .container .media ul li p {
   margin-top: 10px;
-  color: #fefefe;
+  color: #3290D6;
   font-size: 20rem;
 }
 .cont4 .container .more {
@@ -592,7 +611,7 @@ footer .sns {
 }
 footer .sns li {
   margin: 40px 5px 30px 5px;
-  width: 4vw;
+  width: 70rem;
 }
 footer .sns li img {
   width: 100%;
@@ -622,6 +641,6 @@ footer .foot_bottom {
 }
 footer .foot_bottom p {
   color: #fefefe;
-  font-size: 3rem;
+  font-size: 30rem;
   padding-bottom: 20px;
 }

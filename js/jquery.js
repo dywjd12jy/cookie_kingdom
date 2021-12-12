@@ -25,6 +25,11 @@ cookieType.click(function(e){
     }else{                                  //나머지 (종류index*4)-1
         tabIndex = tabIndex * 4 - 1;
     }
+    // this.addClass("tabBtn_active");
+    // $('.tab_button>ul>li').toggleClass('tabBtn_active');
+});
+cookieType.click( function(){
+    $('.tab_button>ul>li').toggleClass('tabBtn_active');
 });
 
 // 개별 쿠키 아이콘 만졌을때 발동
@@ -32,12 +37,13 @@ cookieIndex.click(function(e){
     var index1 = $(this).index();               //선택한 쿠키의 index (0~2 아니면 0~3)
     cookiePicture.hide().eq(index1+tabIndex).show(); //선택한 쿠키만 show()
     cookieDesc.hide().eq(index1+tabIndex).show(); 
+    this.addClass("tabIcon_active");
 });
 
 
 //cont2 텍스트
-var tab_Text =$(".menu_text>ul>li");
-tab_Text.hide().eq(0).show();
+// var tab_Text =$(".menu_text>ul>li");
+// tab_Text.hide().eq(0).show();
 
 // tab_Icon.click(function(e){
 //     e.preventDefault();
