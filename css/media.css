@@ -1,0 +1,39 @@
+html {
+  font-size: 6.25%;
+}
+
+@media (min-width: 2001px) {
+  html {
+    font-size: 0.0499750125vw;
+  }
+}
+@media (max-width: 1999px) and (min-width: 1601px) {
+  html {
+    font-size: 0.05vw;
+  }
+}
+@media (max-width: 1600px) and (min-width: 1025px) {
+  html {
+    font-size: 0.0625vw;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) and (min-width: 900px) and (min-height: 900px) {
+  html {
+    font-size: 0.1302083333vw;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) and (max-width: 899px) {
+  html {
+    font-size: 0.1302083333vw;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 0.1303780965vw;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 0.2vw;
+  }
+}

@@ -25,12 +25,20 @@ cookieType.click(function(e){
     }else{                                  //나머지 (종류index*4)-1
         tabIndex = tabIndex * 4 - 1;
     }
+    
+    $(this).toggleClass('tabBtn_active');
     // this.addClass("tabBtn_active");
     // $('.tab_button>ul>li').toggleClass('tabBtn_active');
 });
 cookieType.click( function(){
-    $('.tab_button>ul>li').toggleClass('tabBtn_active');
+    // $('.tab_button>ul>li').toggleClass('tabBtn_active');
+    // $(this).toggleClass('tabBtn_active');
+    // $(this).addClass('tabBtn_active');
+    
+
 });
+
+
 
 // 개별 쿠키 아이콘 만졌을때 발동
 cookieIndex.click(function(e){

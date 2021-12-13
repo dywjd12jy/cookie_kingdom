@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+html {
+    font-size: 6.25%;
+    // overflow-x: hidden;
+  }  
+  
+@media (min-width:2001px) {
+    html {
+        font-size: 0.0499750124937531vw;
+    }
+}
+@media (max-width:1999px) and (min-width:1601px) {
+    html {
+        font-size: 0.05vw;
+    }
+}
+@media (max-width:1600px) and (min-width:1025px) {
+    html {
+        font-size: 0.0625vw;
+    }
+}
+
+@media (max-width:1024px) and (min-width:768px) {
+// h1 {
+//   font-size: 55rem;
+// }
+
+// h2 {
+//   font-size: 40rem;
+// }
+
+// h3 {
+//   font-size: 30rem;
+// }
+
+// h4 {
+//   font-size: 26rem;
+// }
+
+// h6 {
+//   font-size: 14rem;
+// }
+
+
+@media (min-width:900px) {
+    @media (min-height:900px) {
+        html {
+            font-size: 0.13020833333vw;
+        }
+    }
+
+//   @media (max-height:899px) {
+//     html {
+//       font-size: 0.09765625vw;
+//     }
+//   }
+}
+
+@media (max-width:899px) {
+    html {
+        font-size: 0.130208333333vw;
+        }
+}
+}
+
+@media (max-width:767px) {
+    html {
+        font-size: 0.1303780964797914vw;
+    }
+
+// h1 {
+//   font-size: 40rem;
+// }
+
+// h2 {
+//   font-size: 28rem;
+// }
+
+// h3 {
+//   font-size: 28rem;
+// }
+
+// h4 {
+//   font-size: 20rem;
+// }
+
+// h5 {
+//   font-size: 22rem;
+// }
+
+// h6 {
+//   font-size: 12rem;
+// }
+
+// p {
+//   font-size: 20rem;
+// }
+
+}
+@media (max-width:500px) {
+    html {
+        font-size: 0.2vw;
+    }
+}
+  
