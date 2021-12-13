@@ -12,9 +12,14 @@ html {
     font-size: 0.05vw;
   }
 }
-@media (max-width: 1600px) and (min-width: 1025px) {
+@media (max-width: 1600px) and (min-width: 1441px) {
   html {
     font-size: 0.0625vw;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1025px) {
+  html {
+    font-size: 0.0694444444vw;
   }
 }
 @media (max-width: 1024px) and (min-width: 768px) and (min-width: 900px) and (min-height: 900px) {
