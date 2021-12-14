@@ -12,9 +12,26 @@ html {
     font-size: 0.05vw;
   }
 }
+@media (min-width: 1601px) {
+  .ban_flex {
+    margin-top: 100rem;
+  }
+  .ban_flex .banner {
+    width: 1400rem;
+  }
+}
 @media (max-width: 1600px) and (min-width: 1441px) {
-  html {
-    font-size: 0.0625vw;
+  .ban_flex {
+    padding-top: 100rem;
+    margin-top: 100rem;
+  }
+  .ban_flex .banner {
+    width: 1200rem;
+  }
+}
+@media (max-width: 1440px) {
+  .ban_flex .banner {
+    width: 700rem;
   }
 }
 @media (max-width: 1440px) and (min-width: 1025px) {
@@ -22,14 +39,19 @@ html {
     font-size: 0.0694444444vw;
   }
 }
-@media (max-width: 1024px) and (min-width: 768px) and (min-width: 900px) and (min-height: 900px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   html {
-    font-size: 0.1302083333vw;
+    font-size: 0.09765625vw;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) and (min-width: 900px) {
+  html {
+    font-size: 0.1111111111vw;
   }
 }
 @media (max-width: 1024px) and (min-width: 768px) and (max-width: 899px) {
   html {
-    font-size: 0.1302083333vw;
+    font-size: 0.0111234705vw;
   }
 }
 @media (max-width: 767px) {

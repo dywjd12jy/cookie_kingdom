@@ -73,8 +73,14 @@
         }
     }
 
-    
+//Hamberger (max-width:1024px)
 
+var hdDown = document.getElementById('hd_down');
+var hamberger = document.querySelector('.hamberger');
+
+hamberger.click(function(){
+    hdDown.style.right = '0%';
+});
     
 
 

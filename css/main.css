@@ -1,6 +1,5 @@
 #section_back {
   background: linear-gradient(to bottom, #7fddff, #00073f);
-  margin-top: -100rem;
 }
 
 ::-webkit-scrollbar {
@@ -20,104 +19,242 @@
   display: none;
 }
 
-header {
-  position: fixed;
-  width: 100vw;
-  z-index: 30;
-  font-size: 20rem;
-  top: 0;
-}
-header #hd_up {
-  height: 34rem;
-  padding: 0 20rem;
-  background-color: #0069aa;
-}
-header #hd_up .hd_up {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #eee;
-  height: 100%;
-}
-header #hd_up .hd_up ul {
-  display: flex;
-  justify-content: space-between;
-}
-header #hd_up .hd_up ul li {
-  margin-right: 15rem;
-}
-header #hd_up .hd_up form {
-  display: flex;
-}
-header #hd_up .hd_up form select {
-  font-size: 20rem;
-  cursor: pointer;
-  padding: 0;
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0);
-  border: none;
-  color: #eee;
-}
-header #hd_up .hd_up form select option {
-  background-color: #0069aa;
-  text-align: center;
-}
-header #hd_down {
-  background-color: #002f59;
-  padding: 3rem 20rem;
-  height: 80rem;
-}
-header #hd_down section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-header #hd_down section article:nth-last-of-type(2) {
-  margin-left: 1rem;
-  width: 70%;
-}
-header #hd_down section article:nth-last-of-type(2) ul {
-  display: flex;
-  justify-content: left;
-  font-size: 20rem;
-  margin-left: 80rem;
-}
-header #hd_down section article:nth-last-of-type(2) ul li {
-  margin-right: 80rem;
-}
-header #hd_down section article h1 img {
-  display: flex;
-}
-header #hd_down section article ul {
-  display: flex;
-}
-header #hd_down section article ul li {
-  margin-right: 20rem;
-}
+@media (min-width: 1025px) {
+  #section_back {
+    margin-top: -100rem;
+  }
 
+  header {
+    position: fixed;
+    width: 100vw;
+    z-index: 30;
+    font-size: 20rem;
+    top: 0;
+  }
+  header #hd_up {
+    height: 34rem;
+    padding: 0 20rem;
+    background-color: #0069aa;
+  }
+  header #hd_up .hd_up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #eee;
+    height: 100%;
+  }
+  header #hd_up .hd_up ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  header #hd_up .hd_up ul li {
+    margin-right: 15rem;
+  }
+  header #hd_up .hd_up form {
+    display: flex;
+  }
+  header #hd_up .hd_up form select {
+    font-size: 20rem;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #eee;
+  }
+  header #hd_up .hd_up form select option {
+    background-color: #0069aa;
+    text-align: center;
+  }
+  header #hd_down {
+    background-color: #002f59;
+    padding: 3rem 20rem;
+    height: 80rem;
+  }
+  header #hd_down section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  header #hd_down section article:nth-last-of-type(2) {
+    margin-left: 1rem;
+    width: 70%;
+  }
+  header #hd_down section article:nth-last-of-type(2) ul {
+    display: flex;
+    justify-content: left;
+    font-size: 20rem;
+    margin-left: 80rem;
+  }
+  header #hd_down section article:nth-last-of-type(2) ul li {
+    margin-right: 80rem;
+  }
+  header #hd_down section article .desktop {
+    display: block;
+  }
+  header #hd_down section article .media {
+    display: none;
+  }
+  header #hd_down section article h1 img {
+    display: flex;
+  }
+  header #hd_down section article ul {
+    display: flex;
+  }
+  header #hd_down section article ul li {
+    margin-right: 20rem;
+  }
+
+  .ban_flex {
+    padding-top: 200rem;
+  }
+  .ban_flex .banner {
+    width: 1200rem;
+    margin-top: 50rem;
+  }
+}
+@media (max-width: 1024px) {
+  #section_back {
+    margin-top: 130rem;
+  }
+
+  header {
+    position: relative;
+  }
+  header .desktop {
+    display: none;
+  }
+  header .media {
+    display: block;
+  }
+  header #hd_up {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  header #hd_up .container {
+    width: 100%;
+    display: inline-block;
+  }
+  header #hd_up .hd_up li {
+    color: #fefefe;
+    font-size: 20rem;
+  }
+  header #hd_up .hd_up:first-of-type {
+    display: flex;
+    justify-content: end;
+  }
+  header #hd_up .hd_up .hamberger {
+    z-index: 31;
+    width: 100%;
+    position: absolute;
+    top: 200%;
+    left: 3%;
+    cursor: pointer;
+  }
+  header #hd_up .hd_up .hamberger span {
+    position: relative;
+    display: inline-block;
+    width: 40rem;
+    height: 5rem;
+    background-color: #fefefe;
+  }
+  header #hd_up .hd_up .hamberger span:before, header #hd_up .hd_up .hamberger ::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fefefe;
+  }
+  header #hd_up .hd_up .hamberger span:before {
+    top: -10rem;
+  }
+  header #hd_up .hd_up .hamberger span:after {
+    top: 10rem;
+  }
+  header #hd_down {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: rgba(0, 47, 89, 0.95);
+    z-index: 30;
+    width: 100%;
+    height: 100%;
+  }
+  header #hd_down .hd_down {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header #hd_down .hd_down article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  header #hd_down .hd_down:first-of-type h1 {
+    width: 40%;
+  }
+  header #hd_down .hd_down .nav_menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header #hd_down .hd_down .nav_menu ul:after {
+    content: "";
+    display: inline-block;
+    background-color: #f00;
+    width: 100rem;
+    height: 4rem;
+  }
+  header #hd_down .hd_down ul {
+    display: flex;
+    justify-content: center;
+  }
+  .ban_movie {
+    margin-top: -20rem;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .container .ban_flex .banner {
+    margin-top: 130rem;
+  }
+  .container .ban_flex .banner .characters1 {
+    width: 100rem;
+  }
+  .container .ban_flex .banner .characters2 {
+    width: 120rem;
+  }
+  .container .ban_flex .banner .characters3 {
+    width: 140rem;
+    margin-left: -20rem;
+    transform: rotate(-13deg);
+  }
+}
 main .ban_movie {
   position: absolute;
   z-index: -1;
   width: 100%;
-  height: 100vh;
-  margin-top: 0rem;
 }
 main .ban_movie #bg_vedio {
-  filter: blur(10px);
+  filter: blur(5px);
   filter: brightness(0.3);
 }
 main .ban_flex {
   display: flex;
   justify-content: center;
-  padding-top: 130rem;
-  margin-top: 50rem;
 }
 main .ban_flex .banner {
   position: relative;
-  margin-top: 50rem;
-  width: 1280rem;
-  margin: 0;
 }
 main .ban_flex .banner .ban_media {
   width: 100%;
