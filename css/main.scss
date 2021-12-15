@@ -26,7 +26,7 @@ display: none;
 //header
 @media (min-width : 1025px){
     #section_back {
-        margin-top: -100rem; // main 과 .cont1_배경 겹치게
+        margin-top: -100rem; // main 과 #cont1_배경 겹치게
     }
     header{
         position: fixed;
@@ -135,7 +135,45 @@ display: none;
     }
 }
 @media (max-width:1024px){
-    #section_back{margin-top: 130rem;} // main 과 .cont1_배경 겹치게
+
+    //active
+    .ham_active{
+        span:before{
+            transform: rotate(45deg);
+        }
+        span{
+            transform: rotate(45deg);
+        }
+        span:after{
+            transform: rotate(135deg);
+        }
+    }
+    // #hd_down{
+    //     &.hd_down_active{
+    //         right: 0%;
+    //     }
+    // }
+    
+
+    
+    //설명 젤로 정확하게 해주는 일진인친구가 체고인걸로
+    //일진인친구 피방가기
+    #hd_down.hd_down_active{
+        right: 0%;
+    }
+
+    //일진 빵사오기
+    #hd_down{
+        right: 0%;
+    }
+
+    //친구 피방가기
+    .hd_down_active{
+        right: 0%;
+    }
+
+
+    #section_back{margin-top: 130rem;} // main 과 #cont1_배경 겹치게
     header{
         position: relative;
         .desktop{
@@ -163,7 +201,8 @@ display: none;
                 }
                 .hamberger{
                     z-index: 31;
-                    width: 100%;
+                    width: 5%;
+                    height: 25rem;
                     position: absolute;
                     top: 200%;
                     left: 3%;
@@ -198,7 +237,7 @@ display: none;
         #hd_down{
             position: fixed;
             top: 0;
-            left: -100%;
+            right: -100%;
             background-color: rgba(0,47,89, 0.95);
             z-index: 30;
             width: 100%;
@@ -382,7 +421,7 @@ main{
 .animated{
     transition: 0.5s ease-out;
 }
-.cont1{ //UPDATE
+#cont1{ //UPDATE
     text-align: center;
     padding-top: 300rem;
 
@@ -498,7 +537,7 @@ main{
         }
     }
 }
-.cont2{  //CHARACTERS 
+#cont2{  //CHARACTERS 
 
     text-align: center;
 
@@ -674,7 +713,7 @@ main{
     }
     
 }
-.cont3{  //KINGDOM STORY
+#cont3{  //KINGDOM STORY
     height: 1800rem;
     position: relative;
     padding: 0 10rem;
@@ -791,7 +830,7 @@ main{
         }
     }
 }
-.cont4{  //UPDATE
+#cont4{  //UPDATE
     margin-top: 150rem;
     .container{
         display: flex;
