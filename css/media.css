@@ -30,8 +30,12 @@ html {
   }
 }
 @media (max-width: 1440px) {
+  #section_back {
+    margin-top: -150rem;
+  }
+
   .ban_flex .banner {
-    width: 700rem;
+    width: 1200rem;
   }
 }
 @media (max-width: 1440px) and (min-width: 1025px) {
@@ -39,19 +43,14 @@ html {
     font-size: 0.0694444444vw;
   }
 }
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1024px) {
   html {
     font-size: 0.09765625vw;
   }
 }
-@media (max-width: 1024px) and (min-width: 768px) and (min-width: 900px) {
+@media (max-width: 900px) {
   html {
     font-size: 0.1111111111vw;
-  }
-}
-@media (max-width: 1024px) and (min-width: 768px) and (max-width: 899px) {
-  html {
-    font-size: 0.0111234705vw;
   }
 }
 @media (max-width: 767px) {
@@ -62,5 +61,10 @@ html {
 @media (max-width: 500px) {
   html {
     font-size: 0.2vw;
+  }
+}
+@media (max-width: 499px) {
+  html {
+    font-size: 0.3vw;
   }
 }

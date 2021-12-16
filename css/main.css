@@ -107,14 +107,10 @@
   }
 
   .ban_flex {
-    padding-top: 200rem;
-  }
-  .ban_flex .banner {
-    width: 1200rem;
-    margin-top: 50rem;
+    padding-top: 250rem;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 0px) {
   .hamberger.ham_active span {
     transition: margin 0.25s, transform 0.25s 0.25s;
   }
@@ -136,7 +132,7 @@
   }
 
   #section_back {
-    margin-top: 130rem;
+    margin-top: -60rem;
   }
 
   header {
@@ -158,6 +154,7 @@
     display: inline-block;
   }
   header #hd_up .hd_up li {
+    margin: 30rem 10rem 0;
     color: #fefefe;
     font-size: 20rem;
   }
@@ -166,6 +163,7 @@
     justify-content: end;
   }
   header #hd_up .hd_up .hamberger {
+    display: block;
     position: absolute;
     top: 7px;
     right: 10px;
@@ -239,6 +237,7 @@
     height: 100%;
   }
   .container .ban_flex .banner {
+    width: 900rem;
     margin-top: 130rem;
   }
   .container .ban_flex .banner .characters1 {

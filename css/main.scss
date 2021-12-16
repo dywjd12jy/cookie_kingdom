@@ -127,15 +127,12 @@ display: none;
         }
     }
     .ban_flex{
-        padding-top: 200rem;
-        .banner{
-            width: 1200rem;
-            margin-top: 50rem;
-        }
+        padding-top: 250rem;
     }
 }
-@media (max-width:1024px){
-
+//min-width : 1025px
+@media (max-width:1024px) and (min-width:0px){
+//여기부터
     //active
     .hamberger.ham_active{
         // span:before{
@@ -196,9 +193,9 @@ display: none;
     // .hd_down_active{
     //     right: 0%;
     // }
+//여기까지랑
 
-
-    #section_back{margin-top: 130rem;} // main 과 #cont1_배경 겹치게
+    #section_back{margin-top: -60rem;} // main 과 #cont1_배경 겹치게
     header{
         position: relative;
         .desktop{
@@ -217,6 +214,7 @@ display: none;
             }
             .hd_up{
                 li{
+                    margin: 30rem 10rem 0 ;
                     color: #fefefe;
                     font-size: 20rem;
                 }
@@ -224,8 +222,16 @@ display: none;
                     display: flex;
                     justify-content: end;
                 }
+
+//여기부터                
                 .hamberger{
-                    position: absolute; top: 7px; right: 10px; width: 65px; height: 45px; cursor: pointer;
+                    display: block;
+                    position: absolute;
+                    top: 7px;
+                    right: 10px;
+                    width: 65px;
+                    height: 45px;
+                    cursor: pointer;
                     z-index: 31;
                     // width: 5%;
                     // height: 40rem;
@@ -267,6 +273,7 @@ display: none;
                     //     top: 10rem;
                     // }
                 }
+//여기까지
             }
         }
             
@@ -332,6 +339,7 @@ display: none;
         height: 100%;
         .ban_flex{
             .banner{
+                width: 900rem;
                 margin-top: 130rem;
                 .ban_media{
                     video{
@@ -356,6 +364,7 @@ display: none;
         }
     }
 }
+//(max-width:1024px) and (min-width:0px)
 
 
 //main

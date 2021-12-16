@@ -33,10 +33,13 @@ html {
     }
 }
 @media (max-width:1440px) {
+    #section_back {
+    margin-top: -150rem; // main 과 #cont1_배경 겹치게
+    }
 
     .ban_flex{
         .banner{
-            width: 700rem;
+            width: 1200rem;
         }
     }
 }
@@ -49,21 +52,16 @@ html {
 }
 
 
-@media (max-width:1024px) and (min-width:768px) {
+@media (max-width:1024px){
     html{
         font-size: 0.09765625vw;
     }
 
-    @media (min-width:900px) {
-        html {
-            font-size: 0.1111111111111111vw;
-        }
-    }
-
-    @media (max-width:899px) {
-        html {
-            font-size: 0.0111234705228031vw;
-            }
+    
+}
+@media (max-width:900px) {
+    html {
+        font-size: 0.1111111111111111vw;
     }
 }
 
@@ -76,6 +74,11 @@ html {
 @media (max-width:500px) {
     html {
         font-size: 0.2vw;
+    }
+}
+@media (max-width:499px) {
+    html {
+        font-size: 0.3vw;
     }
 }
   
