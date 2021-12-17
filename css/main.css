@@ -43,6 +43,9 @@
     color: #eee;
     height: 100%;
   }
+  header #hd_up .hd_up .hamberger {
+    display: none;
+  }
   header #hd_up .hd_up ul {
     display: flex;
     justify-content: space-between;
@@ -106,11 +109,34 @@
     margin-right: 20rem;
   }
 
-  .ban_flex {
+  #banner .ban_flex {
     padding-top: 250rem;
   }
+  #banner .ban_flex #bn_vedio {
+    border: solid 1px #fefefe;
+  }
+  #banner .ban_flex #bn_vedio video {
+    border-radius: 5px;
+  }
+  #banner .ban_flex .ban_border {
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -51%);
+    z-index: 2;
+    border: solid 1px #fefefe;
+    width: 95%;
+    height: 105%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .cont3_ch {
+    width: 1280rem;
+  }
 }
-@media (max-width: 1024px) and (min-width: 0px) {
+@media (max-width: 1024px) {
   .hamberger.ham_active span {
     transition: margin 0.25s, transform 0.25s 0.25s;
   }
@@ -138,12 +164,6 @@
   header {
     position: relative;
   }
-  header .desktop {
-    display: none;
-  }
-  header .media {
-    display: block;
-  }
   header #hd_up {
     position: absolute;
     width: 100%;
@@ -165,7 +185,7 @@
   header #hd_up .hd_up .hamberger {
     display: block;
     position: absolute;
-    top: 7px;
+    top: 30px;
     right: 10px;
     width: 65px;
     height: 45px;
@@ -226,30 +246,57 @@
     display: flex;
     justify-content: center;
   }
-  .ban_movie {
-    margin-top: -20rem;
-  }
-
-  .container {
+  header #hd_down .hd_down .ham_link {
+    position: absolute;
+    bottom: 10rem;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100%;
   }
-  .container .ban_flex .banner {
-    width: 900rem;
-    margin-top: 130rem;
+  header #hd_down .hd_down .ham_link li {
+    width: 20%;
+    margin: 0 10rem;
   }
-  .container .ban_flex .banner .characters1 {
+  #banner {
+    width: 100%;
+  }
+  #banner .container .ban_flex .banner {
+    position: relative;
+    width: 100%;
+  }
+  #banner .container .ban_flex .banner .ban_media .ban_border {
+    border: none;
+  }
+  #banner .container .ban_flex .banner .media_logo {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+  }
+  #banner .container .ban_flex .banner .media_logo li {
+    margin: 20rem;
+    width: 20%;
+  }
+  #banner .container .ban_flex .banner .characters {
+    bottom: -120rem;
+    left: 100rem;
+  }
+  #banner .container .ban_flex .banner .characters .character1 {
     width: 100rem;
   }
-  .container .ban_flex .banner .characters2 {
+  #banner .container .ban_flex .banner .characters .character2 {
     width: 120rem;
+    margin: 40rem 0 0 -10rem;
   }
-  .container .ban_flex .banner .characters3 {
+  #banner .container .ban_flex .banner .characters .character3 {
     width: 140rem;
-    margin-left: -20rem;
+    margin: 50rem 0 0 -20rem;
     transform: rotate(-13deg);
+  }
+
+  .cont3_ch {
+    width: 1000rem;
   }
 }
 main .ban_movie {
@@ -271,24 +318,8 @@ main .ban_flex .banner {
 main .ban_flex .banner .ban_media {
   width: 100%;
 }
-main .ban_flex .banner .ban_media video {
-  border-radius: 5px;
-}
-main .ban_flex .banner .ban_media #bn_vedio {
-  border: solid 1px #fefefe;
-}
-main .ban_flex .banner .ban_border {
-  border-radius: 5px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -51%);
-  z-index: 2;
-  border: solid 1px #fefefe;
-  width: 95%;
-  height: 105%;
-  box-sizing: border-box;
-  margin: 0 auto;
+main .ban_flex .banner .banner_link {
+  display: flex;
 }
 main .ban_flex .banner ul:last-of-type {
   position: absolute;
@@ -297,13 +328,13 @@ main .ban_flex .banner ul:last-of-type {
   margin: -70rem 0 0 -80rem;
   transform: rotate(5deg);
 }
-main .ban_flex .banner ul .characters1 {
+main .ban_flex .banner ul .character1 {
   width: 120rem;
 }
-main .ban_flex .banner ul .characters2 {
+main .ban_flex .banner ul .character2 {
   width: 140rem;
 }
-main .ban_flex .banner ul .characters3 {
+main .ban_flex .banner ul .character3 {
   width: 160rem;
   margin-left: -20rem;
   transform: rotate(-13deg);
@@ -619,7 +650,6 @@ main .ban_flex .banner ul .characters3 {
   font-size: 20rem;
 }
 #cont3 .container .cont3_ch {
-  width: 1280rem;
   margin-top: 100rem;
   position: relative;
 }

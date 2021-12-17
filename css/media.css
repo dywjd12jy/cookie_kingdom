@@ -2,6 +2,24 @@ html {
   font-size: 6.25%;
 }
 
+@media (min-width: 1025px) {
+  .desktop {
+    display: block;
+  }
+
+  .media {
+    display: none;
+  }
+}
+@media (max-width: 1024px) and (min-width: 0px) {
+  .desktop {
+    display: none;
+  }
+
+  .media {
+    display: block;
+  }
+}
 @media (min-width: 2001px) {
   html {
     font-size: 0.0499750125vw;
@@ -46,25 +64,5 @@ html {
 @media (max-width: 1024px) {
   html {
     font-size: 0.09765625vw;
-  }
-}
-@media (max-width: 900px) {
-  html {
-    font-size: 0.1111111111vw;
-  }
-}
-@media (max-width: 767px) {
-  html {
-    font-size: 0.1303780965vw;
-  }
-}
-@media (max-width: 500px) {
-  html {
-    font-size: 0.2vw;
-  }
-}
-@media (max-width: 499px) {
-  html {
-    font-size: 0.3vw;
   }
 }

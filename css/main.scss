@@ -46,7 +46,9 @@ display: none;
                 align-items: center;
                 color: #eee;
                 height: 100%;
-
+                .hamberger{
+                    display: none;
+                }
                 ul{
                     display: flex;
                     justify-content: space-between;
@@ -126,12 +128,42 @@ display: none;
             }
         }
     }
-    .ban_flex{
-        padding-top: 250rem;
+    #banner{
+        
+        .ban_flex{
+            padding-top: 250rem;
+            
+            #bn_vedio{
+                border: solid 1px #fefefe;
+
+                video{
+                    border-radius: 5px;
+                }
+            }
+            .ban_border{
+                border-radius: 5px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -51%);
+                z-index: 2;
+                border: solid 1px #fefefe;
+                width: 95%;
+                height: 105%;
+                box-sizing: border-box;
+                margin: 0 auto;
+            }
+        }
+    }
+    .cont3_ch{
+            width: 1280rem;
     }
 }
-//min-width : 1025px
-@media (max-width:1024px) and (min-width:0px){
+// //min-width : 1025px
+
+
+
+@media (max-width:1024px){
 //여기부터
     //active
     .hamberger.ham_active{
@@ -198,12 +230,6 @@ display: none;
     #section_back{margin-top: -60rem;} // main 과 #cont1_배경 겹치게
     header{
         position: relative;
-        .desktop{
-            display: none;
-        }
-        .media{
-            display: block;
-        }
         #hd_up{
             position: absolute;
             width: 100%;
@@ -227,7 +253,7 @@ display: none;
                 .hamberger{
                     display: block;
                     position: absolute;
-                    top: 7px;
+                    top: 30px;
                     right: 10px;
                     width: 65px;
                     height: 45px;
@@ -322,6 +348,16 @@ display: none;
                     display: flex;
                     justify-content: center;
                 }
+                .ham_link{
+                    position: absolute;
+                    bottom: 10rem;
+                    display: flex;
+                    justify-content: center;
+                    li{
+                        width: 20%;
+                        margin: 0 10rem;
+                    }
+                }
             }
             h1{
                 a{
@@ -329,42 +365,61 @@ display: none;
             }
         }
     }
-    .ban_movie{
-        margin-top: -20rem;
-    }
-    .container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        .ban_flex{
-            .banner{
-                width: 900rem;
-                margin-top: 130rem;
-                .ban_media{
-                    video{
+    #banner{
+        width: 100%;
+        .container{
+            .ban_flex{
+                .banner{
+                    position: relative;
+                    width: 100%;
+                    .ban_media{
+                        #bn_vedio{
+                        }
                         
+                        .ban_border{
+                            border: none;
+                        }
                     }
-                }
-                .characters1{
-                    width: 100rem;
+                    .media_logo{
+                        position: absolute;
+                        display: flex;
+                        justify-content: start;
+                        top: 0%;
+                        left: 0%;
+                        width: 100%;
+                        li{
+                            margin: 20rem;
+                            width: 20%;
+                        }
+                    }
+                    .characters{
+                        bottom: -120rem;
+                        left: 100rem;
+                        .character1{
+                            width: 100rem;
 
-                }
-                .characters2{
-                    width: 120rem;
+                        }
+                        .character2{
+                            width: 120rem;
+                            margin: 40rem 0 0 -10rem;
 
-                }
-                .characters3{
-                    width: 140rem;
-                    margin-left: -20rem;
-                    transform: rotate(-13deg);
+                        }
+                        .character3{
+                            width: 140rem;
+                            margin: 50rem 0 0 -20rem;
+                            transform: rotate(-13deg);
 
+                        }
+                    }
                 }
             }
         }
     }
+    .cont3_ch{
+        width: 1000rem;
+    }
 }
-//(max-width:1024px) and (min-width:0px)
+// //(max-width:1024px) and (min-width:0px)
 
 
 //main
@@ -379,8 +434,6 @@ main{
         #bg_vedio{
             filter: blur(5px);
             filter: brightness(0.30);
-
-            source{}
         }
     }
     .ban_flex{
@@ -392,32 +445,14 @@ main{
 
             .ban_media{
                 width: 100%;
+            }
+            .banner_link{
+                display: flex;
 
-                video{
-                    border-radius: 5px;
-                }
-                #bn_vedio{
-                    border: solid 1px #fefefe;
-
-                    source{
-
-                    }
+                li{
+                    
                 }
             }
-            .ban_border{
-                border-radius: 5px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -51%);
-                z-index: 2;
-                border: solid 1px #fefefe;
-                width: 95%;
-                height: 105%;
-                box-sizing: border-box;
-                margin: 0 auto;
-            }
-
             ul{
 
                 &:last-of-type{
@@ -428,15 +463,15 @@ main{
                     transform: rotate(5deg);
 
                 }
-                .characters1{
+                .character1{
                     width: 120rem;
 
                 }
-                .characters2{
+                .character2{
                     width: 140rem;
 
                 }
-                .characters3{
+                .character3{
                     width: 160rem;
                     margin-left: -20rem;
                     transform: rotate(-13deg);
@@ -797,7 +832,6 @@ main{
             font-size: 20rem;
         }
         .cont3_ch{
-            width: 1280rem;
             margin-top: 100rem;
             position: relative;
             .cont3_charac{
