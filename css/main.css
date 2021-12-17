@@ -74,23 +74,27 @@
     padding: 3rem 20rem;
     height: 80rem;
   }
+  header #hd_down .hd_down {
+    display: flex;
+    justify-content: space-around;
+  }
   header #hd_down section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
   }
-  header #hd_down section article:nth-last-of-type(2) {
+  header #hd_down section article:nth-of-type(2) {
     margin-left: 1rem;
-    width: 70%;
+    width: 75%;
   }
-  header #hd_down section article:nth-last-of-type(2) ul {
+  header #hd_down section article:nth-of-type(2) ul {
     display: flex;
     justify-content: left;
     font-size: 20rem;
     margin-left: 80rem;
   }
-  header #hd_down section article:nth-last-of-type(2) ul li {
+  header #hd_down section article:nth-of-type(2) ul li {
     margin-right: 80rem;
   }
   header #hd_down section article .desktop {
@@ -130,6 +134,37 @@
     height: 105%;
     box-sizing: border-box;
     margin: 0 auto;
+  }
+
+  #cont1 {
+    padding-top: 300rem;
+  }
+  #cont1 .slider .controller {
+    width: 1280rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #cont1 .slider .engel_svg {
+    top: -23%;
+    right: 10%;
+  }
+  @keyframes engel_svg {
+    0% {
+      top: -23%;
+    }
+    25% {
+      top: -25%;
+    }
+    50% {
+      top: -23%;
+    }
+    75% {
+      top: -25%;
+    }
+    100% {
+      top: -23%;
+    }
   }
 
   .cont3_ch {
@@ -295,8 +330,130 @@
     transform: rotate(-13deg);
   }
 
+  #cont1 {
+    padding-top: 500rem;
+  }
+  #cont1 .slider .controller {
+    width: 200rem;
+    bottom: 3%;
+    right: 3%;
+  }
+  #cont1 .slider .engel_svg {
+    top: -23%;
+    right: 1%;
+  }
+  @keyframes engel_svg {
+    0% {
+      top: -29%;
+    }
+    25% {
+      top: -27%;
+    }
+    50% {
+      top: -25%;
+    }
+    75% {
+      top: -27%;
+    }
+    100% {
+      top: -29%;
+    }
+  }
+
   .cont3_ch {
-    width: 1000rem;
+    width: 80rem;
+  }
+}
+@media (max-width: 1024px) and (max-width: 767px) {
+  .tab_button ul {
+    max-width: 767px;
+  }
+  .tab_button ul li button {
+    font-size: 20px;
+    padding: 10px 10rem;
+    margin: 10px 3rem;
+    width: 150px;
+  }
+
+  .tab_cont {
+    max-width: 767px;
+    flex-wrap: wrap;
+  }
+  .tab_cont .tab_icon {
+    width: 15%;
+    margin-left: 5%;
+  }
+  .tab_cont .tab_icon ul {
+    width: 50%;
+  }
+  .tab_cont .tab_icon ul li {
+    width: 170rem;
+    height: 170rem;
+    padding: 5rem;
+    margin: 15rem;
+  }
+  .tab_cont .menu_characters {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .menu_text {
+    width: 100%;
+    font-size: 30rem;
+  }
+  .menu_text ul li h5 {
+    font-size: 30rem;
+  }
+  .menu_text ul li h5:first-child {
+    display: none;
+  }
+  .menu_text ul li h4 {
+    font-size: 40rem;
+    margin: 0rem 0 10rem;
+  }
+  .menu_text ul li p {
+    margin-top: 30rem;
+  }
+}
+@media (min-width: 768px) {
+  #cont2 .tab_button ul {
+    width: 100%;
+  }
+  #cont2 .tab_button ul li button {
+    font-size: 20rem;
+    padding: 10rem 20rem;
+    width: 200rem;
+  }
+  #cont2 .tab_cont .tab_icon {
+    width: 20%;
+    margin: 0 auto;
+  }
+  #cont2 .tab_cont .tab_icon ul {
+    align-items: center;
+    width: 100%;
+  }
+  #cont2 .tab_cont .tab_icon ul li {
+    width: 120rem;
+    height: 120rem;
+    padding: 5rem;
+    margin: 15rem;
+  }
+  #cont2 .tab_cont .menu_characters {
+    width: 40%;
+  }
+  #cont2 .menu_text {
+    width: 30%;
+    font-size: 20rem;
+  }
+  #cont2 .menu_text ul li h5 {
+    font-size: 25rem;
+  }
+  #cont2 .menu_text ul li h4 {
+    font-size: 35rem;
+    margin: 20rem 0 30rem;
+  }
+  #cont2 .menu_text ul li p {
+    margin-top: 40rem;
   }
 }
 main .ban_movie {
@@ -359,7 +516,6 @@ main .ban_flex .banner ul .character3 {
 
 #cont1 {
   text-align: center;
-  padding-top: 300rem;
 }
 #cont1 .slider {
   position: relative;
@@ -417,10 +573,6 @@ main .ban_flex .banner ul .character3 {
 }
 #cont1 .slider .controller {
   position: absolute;
-  width: 1280rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
 }
@@ -453,28 +605,10 @@ main .ban_flex .banner ul .character3 {
   z-index: 28;
   width: 250rem;
   transform: rotate(-5deg);
-  top: -23%;
-  right: 10%;
   transform: translate(0 20%);
   animation: engel_svg 2.5s 0s infinite linear;
 }
-@keyframes engel_svg {
-  0% {
-    top: -23%;
-  }
-  25% {
-    top: -25%;
-  }
-  50% {
-    top: -23%;
-  }
-  75% {
-    top: -25%;
-  }
-  100% {
-    top: -23%;
-  }
-}
+@keyframes engel_svg {}
 
 #cont2 {
   text-align: center;
@@ -484,19 +618,16 @@ main .ban_flex .banner ul .character3 {
 }
 #cont2 .tab_button {
   margin-top: 150rem;
-  width: 100%;
 }
 #cont2 .tab_button ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #cont2 .tab_button ul li {
   margin: 0 5px;
 }
 #cont2 .tab_button ul li button {
-  font-size: 20rem;
-  padding: 10rem 20rem;
-  width: 200rem;
   color: #fefefe;
   background-color: #002f59;
   box-shadow: 1px 1px 2px 1.5px #bee0ff;
@@ -507,7 +638,7 @@ main .ban_flex .banner ul .character3 {
   color: #fefefe;
 }
 #cont2 .tabBtn_active {
-  background: #f00;
+  background: #0069aa;
   color: #fefefe;
 }
 #cont2 .tabIcon_active {
@@ -518,21 +649,11 @@ main .ban_flex .banner ul .character3 {
   align-items: center;
   margin-top: 100rem;
 }
-#cont2 .tab_cont .tab_icon {
-  width: 20%;
-  margin: 0 auto;
-}
 #cont2 .tab_cont .tab_icon ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
 }
 #cont2 .tab_cont .tab_icon ul li {
-  width: 120rem;
-  height: 120rem;
-  padding: 5rem;
-  margin: 15rem;
   border: 3rem solid transparent;
   border-radius: 50%;
   background-image: linear-gradient(#fefefe, #fefefe), linear-gradient(to right, #54abff 20%, #00073f 100%);
@@ -554,9 +675,6 @@ main .ban_flex .banner ul .character3 {
 }
 #cont2 .tab_cont .tab_icon ul li img {
   width: 100%;
-}
-#cont2 .tab_cont .menu_characters {
-  width: 40%;
 }
 #cont2 .tab_cont .menu_characters .menu {
   position: relative;
@@ -587,26 +705,16 @@ main .ban_flex .banner ul .character3 {
   display: block;
 }
 #cont2 .tab_cont .menu_text {
-  width: 30%;
   padding: 60rem;
-  font-size: 20rem;
 }
 #cont2 .tab_cont .menu_text ul li {
   text-align: left;
   width: 100%;
   color: #fefefe;
 }
-#cont2 .tab_cont .menu_text ul li h5 {
-  font-size: 25rem;
-}
-#cont2 .tab_cont .menu_text ul li h4 {
-  font-size: 35rem;
-  margin: 20rem 0 30rem;
-}
 #cont2 .tab_cont .menu_text ul li p {
-  margin-top: 30rem;
   white-space: pre-line;
-  color: #dfdfdf;
+  color: #d2e4ff;
 }
 #cont2 .tab_cont .menu_text ul li:first-of-type {
   display: block;
