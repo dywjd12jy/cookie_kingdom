@@ -7,7 +7,7 @@ html {
     display: block;
   }
 
-  .media {
+  .mobile {
     display: none;
   }
 }
@@ -16,7 +16,7 @@ html {
     display: none;
   }
 
-  .media {
+  .mobile {
     display: block;
   }
 }

@@ -5,7 +5,6 @@
         slide_Li = document.querySelectorAll('.slide_list li'),
 
         slideWidth = document.querySelector('.slide_list li').offsetWidth,
-        // slideWidth = 90,
 
         currentIdx = 0,
         slideLength = slide_Li.length,
@@ -13,7 +12,6 @@
         nextBtn = document.querySelector('.next'),
         prevBtn = document.querySelector('.prev');
         
-        // console.log (slideWidth);
         console.log (slideWidth);
 
     makeClone();
@@ -79,9 +77,6 @@ var hamberger = document.querySelector('.hamberger');
 var hdDown = document.getElementById('hd_down');
 
 hamberger.addEventListener("click",function(){
-    // hdDown.style.right = '0%';
-    // var hamActive= document.querySelector('.ham_active');
-    // var hdDownActive= document.querySelector('.hd_down_active');
     hamberger.classList.toggle('ham_active');
     hdDown.classList.toggle('hd_down_active');
 });

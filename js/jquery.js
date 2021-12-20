@@ -34,18 +34,16 @@ cookieType.click( function(){
     // $('.tab_button>ul>li').toggleClass('tabBtn_active');
     // $(this).toggleClass('tabBtn_active');
     // $(this).addClass('tabBtn_active');
-    
-
 });
 
 
 
 // 개별 쿠키 아이콘 만졌을때 발동
 cookieIndex.click(function(e){
-    var index1 = $(this).index();               //선택한 쿠키의 index (0~2 아니면 0~3)
+    var index1 = $(this).index();            //선택한 쿠키의 index (0~2 아니면 0~3)
     cookiePicture.hide().eq(index1+tabIndex).show(); //선택한 쿠키만 show()
     cookieDesc.hide().eq(index1+tabIndex).show(); 
-    this.addClass("tabIcon_active");
+    this.toggleClass("tabIcon_active");
 });
 
 
