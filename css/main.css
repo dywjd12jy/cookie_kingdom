@@ -177,6 +177,46 @@
     }
   }
 
+  #cont2 .tab_button ul {
+    width: 100%;
+  }
+  #cont2 .tab_button ul li button {
+    font-size: 20rem;
+    padding: 10rem 20rem;
+    width: 200rem;
+  }
+  #cont2 .tab_cont .tab_icon {
+    width: 20%;
+    margin: 0 auto;
+  }
+  #cont2 .tab_cont .tab_icon ul {
+    align-items: center;
+    width: 100%;
+  }
+  #cont2 .tab_cont .tab_icon ul li {
+    width: 120rem;
+    height: 120rem;
+    padding: 5rem;
+    margin: 15rem;
+  }
+  #cont2 .tab_cont .menu_characters {
+    width: 40%;
+  }
+  #cont2 .menu_text {
+    width: 30%;
+    font-size: 20rem;
+  }
+  #cont2 .menu_text ul li h5 {
+    font-size: 25rem;
+  }
+  #cont2 .menu_text ul li h4 {
+    font-size: 35rem;
+    margin: 20rem 0 30rem;
+  }
+  #cont2 .menu_text ul li p {
+    margin-top: 40rem;
+  }
+
   #cont3 .light {
     height: 1800rem;
   }
@@ -566,14 +606,6 @@
   }
 }
 @media (max-width: 1024px) and (max-width: 767px) and (min-width: 450px) {
-  #hd_down article:first-of-type h1 {
-    width: 80%;
-  }
-  #hd_down .ham_link li {
-    width: 28%;
-    margin: 0 10rem;
-  }
-
   html header #hd_up .hd_up .hamberger.ham_active .bar1 {
     margin-top: 16rem;
     margin-bottom: -8rem;
@@ -597,6 +629,17 @@
   }
   .hamberger .bar3 {
     margin-top: 8rem;
+  }
+
+  #hd_down article:first-of-type h1 {
+    width: 80%;
+  }
+  #hd_down .nav_right {
+    font-size: 40rem;
+  }
+  #hd_down .ham_link li {
+    width: 28%;
+    margin: 0 10rem;
   }
 
   .title {
@@ -628,18 +671,6 @@
   }
 }
 @media (max-width: 1024px) and (max-width: 767px) and (max-width: 449px) and (min-width: 0px) {
-  header .nav_right {
-    font-size: 40rem;
-  }
-
-  #hd_down article:first-of-type h1 {
-    width: 80%;
-  }
-  #hd_down .ham_link li {
-    width: 30%;
-    margin: 0 10rem;
-  }
-
   html header #hd_up .hd_up .hamberger.ham_active .bar1 {
     margin-top: 16rem;
     margin-bottom: -8rem;
@@ -663,6 +694,17 @@
   }
   .hamberger .bar3 {
     margin-top: 12rem;
+  }
+
+  #hd_down article:first-of-type h1 {
+    width: 80%;
+  }
+  #hd_down .nav_right {
+    font-size: 40rem;
+  }
+  #hd_down .ham_link li {
+    width: 30%;
+    margin: 0 10rem;
   }
 
   .title {
@@ -918,11 +960,10 @@ main .ban_flex .banner ul .character3 {
   background: #0069aa;
   color: #fefefe;
 }
-#cont2 .tabBtn_active {
+#cont2 .tab_button ul li.tabBtn_active button {
   background: #0069aa;
-  color: #fefefe;
 }
-#cont2 .tabIcon_active {
+#cont2 .tab_cont .tab_icon .tabIcon_active {
   background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #7fddff 20%, #3a2aff 100%);
 }
 #cont2 .tab_cont {

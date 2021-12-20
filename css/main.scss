@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 //전체 html background color
 #section_back {
     background: linear-gradient(to bottom, #7fddff, #00073f);
@@ -192,6 +191,60 @@ display: none;
             }
         }
     }
+    #cont2{
+        .tab_button{
+            ul{
+                width: 100%;
+                li{
+
+                    button{
+                        font-size: 20rem;
+                        padding: 10rem 20rem;
+                        width: 200rem;
+
+                    }
+                }
+            }
+        }
+        .tab_cont{
+            .tab_icon{
+                width: 20%;
+                margin: 0 auto;
+                ul{
+                    align-items: center;
+                    width: 100%;
+                    li{
+                        width: 120rem;
+                        height: 120rem;
+                        padding: 5rem;
+                        margin: 15rem;
+                    }
+                }
+            }
+            .menu_characters{
+                width: 40%;
+            }
+        }
+        .menu_text{
+            width: 30%;
+            font-size: 20rem;
+            ul{
+                li{
+                    h5{
+                        font-size: 25rem;
+                    }
+                    h4{
+                        font-size: 35rem;
+                        margin: 20rem 0 30rem;
+                    }
+                    p{
+                        margin-top: 40rem;
+                    }
+                }
+            }
+            
+        }
+    }
     #cont3{
         .light{
             height: 1800rem;
@@ -352,6 +405,7 @@ display: none;
                         li{
                             margin: 0 10rem 80rem;
                             a{
+
                                 color: #aaaaaa;
                                 &:hover{
                                     color:#6a95bd;
@@ -545,7 +599,6 @@ display: none;
                     }
                 }
                 .tab_cont{
-                    // width: 1280rem;
                     .tab_icon{
                         width: 20%;
                         margin: 0 auto;
@@ -583,7 +636,6 @@ display: none;
                     }
                     
                 }
-
             }
             #cont3{
                 .container{
@@ -665,22 +717,6 @@ display: none;
             }
         }
             @media (min-width:450px){ // 모바일 450px ~  767px
-                #hd_down{
-                    article{
-                        &:first-of-type{
-                            h1{
-                                width: 80%;
-                            }
-                        }
-                    }
-                    .ham_link{
-                        li{
-                            width: 28%;
-                            margin: 0 10rem;
-                        }
-                    }
-                }
-                
                 html{
                     header{
                         #hd_up{
@@ -698,8 +734,6 @@ display: none;
                         }
                     }
                 }
-
-
                 .hamberger{
                     width: 70rem;
                     height: 45rem;
@@ -711,6 +745,24 @@ display: none;
                     }
                     .bar1{margin-bottom: 8rem;}
                     .bar3{margin-top: 8rem;}
+                }
+                #hd_down{
+                    article{
+                        &:first-of-type{
+                            h1{
+                                width: 80%;
+                            }
+                        }
+                    }
+                    .nav_right{
+                        font-size: 40rem;
+                    }
+                    .ham_link{
+                        li{
+                            width: 28%;
+                            margin: 0 10rem;
+                        }
+                    }
                 }
                 .title{
                     line-height: 60rem;
@@ -747,26 +799,6 @@ display: none;
                 }
             }
             @media (max-width:449px)and(min-width:0px){ //모바일 0 ~ 449px
-                header{
-                    .nav_right{
-                        font-size: 40rem;
-                    }
-                }
-                #hd_down{
-                    article{
-                        &:first-of-type{
-                            h1{
-                                width: 80%;
-                            }
-                        }
-                    }
-                    .ham_link{
-                        li{
-                            width: 30%;
-                            margin: 0 10rem;
-                        }
-                    }
-                }
                 html{
                     header{
                         #hd_up{
@@ -795,6 +827,24 @@ display: none;
                     }
                     .bar1{margin-bottom: 12rem;}
                     .bar3{margin-top: 12rem;}
+                }
+                #hd_down{
+                    article{
+                        &:first-of-type{
+                            h1{
+                                width: 80%;
+                            }
+                        }
+                    }
+                    .nav_right{
+                        font-size: 40rem;
+                    }
+                    .ham_link{
+                        li{
+                            width: 30%;
+                            margin: 0 10rem;
+                        }
+                    }
                 }
                 .title{
                     line-height: 100rem;
@@ -1056,7 +1106,6 @@ main{
     }
 }
 #cont2{  //CHARACTERS 
-
     text-align: center;
     margin-top: 300rem;
 
@@ -1090,9 +1139,20 @@ main{
             }
         }
     }
-    .tabBtn_active{background:  #0069aa; color: #fefefe;}
-    .tabIcon_active{background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #7fddff 20%,  #3a2aff 100%);}
-    
+    .tab_button{
+        ul{
+            li.tabBtn_active{
+                button{
+                    background:  #0069aa;
+                }
+            }
+        }
+    }
+    .tab_cont{
+        .tab_icon{
+            .tabIcon_active{background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #7fddff 20%,  #3a2aff 100%);}
+        }
+    }
     .tab_cont{
         display: flex;
         align-items: center;
@@ -1107,7 +1167,6 @@ main{
                     background-image: linear-gradient(#fefefe, #fefefe), linear-gradient(to right, #54abff 20%,  #00073f 100%);
                     background-origin: border-box;
                     background-clip: content-box, border-box;
-
                     
                     &:hover{
                         background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #7fddff 20%,  #3a2aff 100%);
@@ -1122,12 +1181,10 @@ main{
                         align-items: center;
                         svg{
                             width: 100%;
-
                         }
                     }
                     img{
                         width: 100%;
-
                     }
                 }
             }
