@@ -81,20 +81,6 @@ hamberger.addEventListener("click",function(){
     hdDown.classList.toggle('hd_down_active');
 });
 console.log(hamberger);
-
-// var nav = $("#nav ul li");
-// var cont = $("#contents > div");
-
-// nav.click(function(e){
-//   e.preventDefault();
-//   var target = $(this);
-//   var index = target.index();
-//   //alert(index);
-//   var section = cont.eq(index);
-//   var offset = section.offset().top;
-//   //alert(offset);
-//   $("html,body").animate({ scrollTop:offset },600,"easeInOutBack");
-// });
     
 
 

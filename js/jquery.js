@@ -3,6 +3,7 @@
         
 //변수 지정
 var cookieType = $(".tab_button>ul>li");    //위에있는 탭 (쿠키 종류)
+var cookieType_btn = $(".tab_button>ul>li>button");    //위에있는 탭 (쿠키 종류)
 var cookeTab =$(".tab_icon>ul");            //왼쪽에있는 탭 (쿠키 아이콘)
 var cookieDesc = $(".menu_text>ul>li");     //개별 쿠키 설명
 var cookieIndex = $(".tab_icon>ul>li");     //개별 쿠키 아이콘
@@ -26,9 +27,10 @@ cookieType.click(function(e){
         tabIndex = tabIndex * 4 - 1;
     }
     
-    $(this).toggleClass('tabBtn_active');
 });
-cookieType.click( function(){
+cookieType_btn.click( function(e){
+    cookieType_btn.removeClass('tabBtn_active');
+    $(this).addClass('tabBtn_active');
 });
 
 

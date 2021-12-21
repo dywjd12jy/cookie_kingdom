@@ -2,7 +2,6 @@
 
 html {
     font-size: 6.25%;
-    // overflow-x: hidden;
   }  
 @media (min-width : 1025px){
     .desktop{
@@ -35,31 +34,21 @@ html {
     }
 }
 @media (min-width: 1601px){
-    .ban_flex{
-        margin-top: 100rem;
-        .banner{
-            width: 1400rem;
-        }
+    .banner{
+        width: 1400rem;
     }
 }
 @media (max-width: 1600px) and (min-width:1441px) {
-    .ban_flex{
-        padding-top: 100rem;
-        margin-top: 100rem;
-        .banner{
-            width: 1200rem;
-        }
+    .banner{
+        width: 1200rem;
     }
 }
 @media (max-width:1440px) {
     #section_back {
     margin-top: -150rem; // main 과 #cont1_배경 겹치게
     }
-
-    .ban_flex{
-        .banner{
-            width: 1200rem;
-        }
+    .banner{
+        width: 1200rem;
     }
 }
 
@@ -76,16 +65,5 @@ html {
         font-size: 0.09765625vw;
     }
 
-}
-
-@media (max-width:500px) {
-    html {
-        // font-size: 0.2vw;
-    }
-}
-@media (max-width:499px) {
-    html {
-        // font-size: 0.3vw;
-    }
 }
   

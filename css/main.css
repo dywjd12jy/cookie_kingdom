@@ -960,7 +960,7 @@ main .ban_flex .banner ul .character3 {
   background: #0069aa;
   color: #fefefe;
 }
-#cont2 .tab_button ul li.tabBtn_active button {
+#cont2 .tab_button ul li button.tabBtn_active {
   background: #0069aa;
 }
 #cont2 .tab_cont .tab_icon .tabIcon_active {
@@ -1228,6 +1228,7 @@ footer .sns {
 footer .sns li {
   margin: 10rem 5rem 30rem 5rem;
   width: 90rem;
+  cursor: pointer;
 }
 footer .sns li img {
   width: 100%;
@@ -1242,6 +1243,7 @@ footer .foot_box li {
   padding: 8rem 20rem;
   margin: 0 10rem;
   font-size: 15rem;
+  cursor: pointer;
 }
 footer .foot_text {
   font-size: 15rem;
@@ -1260,4 +1262,5 @@ footer .foot_bottom {
 footer .foot_bottom p {
   color: #fefefe;
   font-size: 30rem;
+  cursor: pointer;
 }

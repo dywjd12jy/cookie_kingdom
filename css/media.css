@@ -31,19 +31,12 @@ html {
   }
 }
 @media (min-width: 1601px) {
-  .ban_flex {
-    margin-top: 100rem;
-  }
-  .ban_flex .banner {
+  .banner {
     width: 1400rem;
   }
 }
 @media (max-width: 1600px) and (min-width: 1441px) {
-  .ban_flex {
-    padding-top: 100rem;
-    margin-top: 100rem;
-  }
-  .ban_flex .banner {
+  .banner {
     width: 1200rem;
   }
 }
@@ -52,7 +45,7 @@ html {
     margin-top: -150rem;
   }
 
-  .ban_flex .banner {
+  .banner {
     width: 1200rem;
   }
 }
